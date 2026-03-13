@@ -1,0 +1,38 @@
+{
+  "variantName": "columns-features",
+  "baseBlock": "columns",
+  "version": "1.0.0",
+  "created": "2026-03-12T21:10:00.000Z",
+  "sourceContext": {
+    "originUrl": "https://www.coursera.org/explore/new-on-coursera",
+    "originPage": "Coursera explore/discovery page",
+    "blockPosition": "bottom"
+  },
+  "visualCharacteristics": {
+    "colorScheme": "light",
+    "density": "spacious",
+    "purpose": "feature-highlights",
+    "imagePattern": "noimg"
+  },
+  "contentPattern": {
+    "structure": "heading + 3-columns(heading + paragraph)",
+    "buttonCount": 0,
+    "imageCount": 0
+  },
+  "reuseGuidance": {
+    "suitableFor": [
+      "feature highlight sections",
+      "3-column benefit lists",
+      "value proposition sections"
+    ],
+    "notSuitableFor": [
+      "image-heavy columns",
+      "2-column layouts"
+    ]
+  },
+  "usage": {
+    "pagesUsing": ["/explore/new-on-coursera"],
+    "reuseCount": 1,
+    "lastUsed": "2026-03-12T21:10:00.000Z"
+  }
+}

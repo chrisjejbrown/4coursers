@@ -1,0 +1,38 @@
+{
+  "variantName": "cards-course",
+  "baseBlock": "cards",
+  "version": "1.0.0",
+  "created": "2026-03-12T21:10:00.000Z",
+  "sourceContext": {
+    "originUrl": "https://www.coursera.org/explore/new-on-coursera",
+    "originPage": "Coursera explore/discovery page",
+    "blockPosition": "middle"
+  },
+  "visualCharacteristics": {
+    "colorScheme": "light",
+    "density": "compact",
+    "purpose": "course-cards",
+    "imagePattern": "large"
+  },
+  "contentPattern": {
+    "structure": "image + partner-logo + partner-name + title + type-label",
+    "buttonCount": 0,
+    "imageCount": 2
+  },
+  "reuseGuidance": {
+    "suitableFor": [
+      "course catalog grids",
+      "product card grids with images",
+      "4-column card layouts"
+    ],
+    "notSuitableFor": [
+      "text-only card grids",
+      "cards without images"
+    ]
+  },
+  "usage": {
+    "pagesUsing": ["/explore/new-on-coursera"],
+    "reuseCount": 1,
+    "lastUsed": "2026-03-12T21:10:00.000Z"
+  }
+}

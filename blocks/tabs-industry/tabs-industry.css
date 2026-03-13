@@ -1,0 +1,155 @@
+/* Tabs Industry - Coursera chip/pill-style tabs */
+.tabs-industry .tabs-industry-list {
+  display: flex;
+  gap: 8px;
+  max-width: 100%;
+  overflow-x: auto;
+  padding-bottom: 4px;
+  scrollbar-width: thin;
+}
+
+.tabs-industry .tabs-industry-list button {
+  flex: 0 0 max-content;
+  margin: 0;
+  border: 1px solid var(--border-color);
+  border-radius: 32px;
+  padding: 6px 16px;
+  height: 32px;
+  background-color: var(--background-color);
+  color: var(--text-color);
+  font-size: var(--body-font-size-s);
+  font-weight: 600;
+  line-height: 1;
+  text-align: center;
+  text-overflow: unset;
+  overflow: unset;
+  white-space: nowrap;
+  cursor: pointer;
+  transition: background-color var(--transition-base), color var(--transition-base), border-color var(--transition-base);
+}
+
+.tabs-industry .tabs-industry-list button p {
+  margin: 0;
+}
+
+.tabs-industry .tabs-industry-list button:hover {
+  background-color: var(--light-color);
+  border-color: var(--text-color-secondary);
+}
+
+.tabs-industry .tabs-industry-list button[aria-selected='true'] {
+  background-color: var(--accent-color);
+  border-color: var(--accent-color);
+  color: var(--background-color);
+  cursor: default;
+}
+
+.tabs-industry .tabs-industry-panel {
+  margin-top: 24px;
+  padding: 0;
+  border: none;
+  overflow: auto;
+}
+
+.tabs-industry .tabs-industry-panel[aria-hidden='true'] {
+  display: none;
+}
+
+/* Course items inside tab panels - card-like presentation */
+.tabs-industry .tabs-industry-panel > div {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 0;
+}
+
+.tabs-industry .tabs-industry-panel h3 {
+  margin: 0;
+  padding: 16px 16px 4px;
+  font-size: var(--body-font-size-m);
+  font-weight: 600;
+  line-height: 1.3;
+  border-top: 1px solid var(--border-color);
+}
+
+.tabs-industry .tabs-industry-panel h3:first-child {
+  border-top: none;
+}
+
+.tabs-industry .tabs-industry-panel h3 a:any-link {
+  color: var(--text-color);
+}
+
+.tabs-industry .tabs-industry-panel h3 a:hover {
+  color: var(--link-color);
+  text-decoration: underline;
+}
+
+.tabs-industry .tabs-industry-panel > div > p {
+  margin: 0;
+  padding: 0 16px 4px;
+  font-size: var(--body-font-size-s);
+  color: var(--text-color-secondary);
+}
+
+/* Cards inside tab panels (ul-based) */
+.tabs-industry .tabs-industry-panel ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 16px;
+}
+
+.tabs-industry .tabs-industry-panel ul li {
+  border: 1px solid var(--border-color);
+  border-radius: 16px;
+  background-color: var(--background-color);
+  overflow: hidden;
+  transition: box-shadow var(--transition-base);
+}
+
+.tabs-industry .tabs-industry-panel ul li:hover {
+  box-shadow: var(--shadow-md);
+}
+
+@media (width >= 600px) {
+  .tabs-industry .tabs-industry-list button {
+    font-size: var(--body-font-size-s);
+  }
+
+  .tabs-industry .tabs-industry-panel ul {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (width >= 900px) {
+  .tabs-industry .tabs-industry-list button {
+    font-size: var(--body-font-size-m);
+  }
+
+  .tabs-industry .tabs-industry-panel > div {
+    grid-template-columns: repeat(4, 1fr);
+  }
+
+  .tabs-industry .tabs-industry-panel h3 {
+    border-top: none;
+    border-left: 1px solid var(--border-color);
+  }
+
+  .tabs-industry .tabs-industry-panel h3:first-child {
+    border-left: none;
+  }
+
+  .tabs-industry .tabs-industry-panel > div > p {
+    border-left: 1px solid var(--border-color);
+  }
+
+  .tabs-industry .tabs-industry-panel > div > p:nth-child(3n + 2) {
+    border-left: none;
+  }
+
+  .tabs-industry .tabs-industry-panel ul {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}

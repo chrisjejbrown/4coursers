@@ -1,0 +1,88 @@
+/* Hero Promo - Coursera Plus promotional banner */
+.hero-promo-container .hero-promo-wrapper {
+  max-width: var(--content-max-width);
+  margin: 0 auto;
+}
+
+.hero-promo {
+  display: grid;
+  grid-template-columns: 1fr;
+  background-color: var(--dark-color);
+  color: var(--background-color);
+  border-radius: 12px;
+  overflow: hidden;
+}
+
+/* Image column */
+.hero-promo > div:first-child {
+  min-height: 200px;
+  overflow: hidden;
+}
+
+.hero-promo > div:first-child img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+/* Text column */
+.hero-promo > div:last-child {
+  padding: 24px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+/* Coursera Plus logo - keep small */
+.hero-promo > div:last-child p:first-child img {
+  width: 160px;
+  height: auto;
+  margin-bottom: 8px;
+}
+
+.hero-promo h3 {
+  color: var(--background-color);
+  margin: 8px 0 16px;
+  font-size: var(--heading-font-size-m);
+}
+
+.hero-promo p {
+  color: var(--background-color);
+  margin: 0;
+}
+
+.hero-promo a:any-link {
+  color: var(--background-color);
+}
+
+.hero-promo .button-container {
+  margin: 8px 0 0;
+}
+
+.hero-promo a.button:any-link {
+  background-color: var(--background-color);
+  color: var(--dark-color);
+  border-radius: var(--button-border-radius);
+  padding: var(--button-padding-large);
+  font-weight: var(--button-font-weight);
+}
+
+.hero-promo a.button:hover {
+  background-color: var(--light-color);
+  color: var(--link-hover-color);
+}
+
+@media (width >= 900px) {
+  .hero-promo {
+    grid-template-columns: 2fr 3fr;
+  }
+
+  .hero-promo > div:first-child {
+    min-height: 240px;
+  }
+
+  .hero-promo > div:last-child {
+    padding: 32px 40px;
+  }
+}

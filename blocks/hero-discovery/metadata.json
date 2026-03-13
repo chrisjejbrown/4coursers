@@ -1,0 +1,38 @@
+{
+  "variantName": "hero-discovery",
+  "baseBlock": "hero",
+  "version": "1.0.0",
+  "created": "2026-03-12T21:10:00.000Z",
+  "sourceContext": {
+    "originUrl": "https://www.coursera.org/explore/new-on-coursera",
+    "originPage": "Coursera explore/discovery page",
+    "blockPosition": "top"
+  },
+  "visualCharacteristics": {
+    "colorScheme": "dark",
+    "density": "spacious",
+    "purpose": "discovery-hero",
+    "imagePattern": "large"
+  },
+  "contentPattern": {
+    "structure": "image + heading + paragraph + CTA",
+    "buttonCount": 1,
+    "imageCount": 1
+  },
+  "reuseGuidance": {
+    "suitableFor": [
+      "discovery pages with hero image",
+      "explore/browse pages",
+      "landing pages with dark gradient background"
+    ],
+    "notSuitableFor": [
+      "text-only hero sections",
+      "minimal hero without images"
+    ]
+  },
+  "usage": {
+    "pagesUsing": ["/explore/new-on-coursera"],
+    "reuseCount": 1,
+    "lastUsed": "2026-03-12T21:10:00.000Z"
+  }
+}

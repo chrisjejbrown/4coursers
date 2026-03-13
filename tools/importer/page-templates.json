@@ -1,0 +1,87 @@
+{
+  "templates": [
+    {
+      "name": "explore-page",
+      "urls": [
+        "https://www.coursera.org/explore/new-on-coursera"
+      ],
+      "description": "Coursera explore/discovery page showcasing new courses, specializations, and programs available on the platform",
+      "blocks": [
+        {
+          "name": "hero-discovery",
+          "instances": ["div.cds-211 > div.css-198siyw"]
+        },
+        {
+          "name": "cards-course",
+          "instances": ["div.css-set5t7 section.rc-ProductCardCollection"]
+        },
+        {
+          "name": "hero-promo",
+          "instances": ["div.css-1pntud3 section.css-1p9byib"]
+        },
+        {
+          "name": "tabs-industry",
+          "instances": ["div.css-1idvyae"]
+        },
+        {
+          "name": "cards-explore",
+          "instances": ["div.css-1ubt0nh ~ section.css-1p9byib"]
+        },
+        {
+          "name": "columns-features",
+          "instances": ["div.css-2iox3"]
+        }
+      ],
+      "sections": [
+        {
+          "id": "section-1",
+          "name": "Hero",
+          "selector": "div.css-ae75n0",
+          "style": null,
+          "blocks": ["hero-discovery"],
+          "defaultContent": []
+        },
+        {
+          "id": "section-2",
+          "name": "Trending New Courses",
+          "selector": "div.css-set5t7",
+          "style": null,
+          "blocks": ["cards-course"],
+          "defaultContent": ["h2.css-nr62m0"]
+        },
+        {
+          "id": "section-3",
+          "name": "Coursera Plus CTA Banner",
+          "selector": ["div.css-set5t7 > div > div > div > div > div > section.css-1p9byib", "div.css-6gwjum section.css-1p9byib", "a[href*='courseraplus'] section.css-1p9byib"],
+          "style": null,
+          "blocks": ["hero-promo"],
+          "defaultContent": []
+        },
+        {
+          "id": "section-4",
+          "name": "New Courses by Industry",
+          "selector": ["h2.css-nr62m0:nth-of-type(2)", "div.css-6gwjum:nth-of-type(2)"],
+          "style": null,
+          "blocks": ["tabs-industry"],
+          "defaultContent": ["h2.css-nr62m0"]
+        },
+        {
+          "id": "section-5",
+          "name": "Explore More on Coursera",
+          "selector": "div.css-1ubt0nh",
+          "style": null,
+          "blocks": ["cards-explore"],
+          "defaultContent": ["h2.css-1ttkfaa"]
+        },
+        {
+          "id": "section-6",
+          "name": "World-Class Learning CTA",
+          "selector": "div.css-19t42ot",
+          "style": null,
+          "blocks": ["columns-features"],
+          "defaultContent": ["h2.css-h5y06f"]
+        }
+      ]
+    }
+  ]
+}

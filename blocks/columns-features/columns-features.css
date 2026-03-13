@@ -1,0 +1,49 @@
+/* Columns Features - Coursera 3-column feature layout */
+.columns-features > div {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.columns-features > div > div {
+  order: 1;
+}
+
+.columns-features > div > .columns-features-img-col {
+  order: 0;
+}
+
+.columns-features img {
+  width: 100%;
+}
+
+.columns-features > div > .columns-features-img-col img {
+  display: block;
+}
+
+.columns-features h3 {
+  margin-top: 0;
+  margin-bottom: 8px;
+  font-size: var(--heading-font-size-l);
+  font-weight: 600;
+}
+
+.columns-features p {
+  margin-top: 0;
+  color: var(--text-color-secondary);
+  font-size: var(--body-font-size-m);
+  line-height: 1.5;
+}
+
+@media (width >= 900px) {
+  .columns-features > div {
+    align-items: flex-start;
+    flex-direction: unset;
+    gap: 32px;
+  }
+
+  .columns-features > div > div {
+    flex: 1;
+    order: unset;
+  }
+}
