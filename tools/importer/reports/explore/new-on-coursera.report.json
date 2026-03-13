@@ -1,0 +1,16 @@
+{
+  "status": "success",
+  "url": "https://www.coursera.org/explore/new-on-coursera",
+  "path": "explore/new-on-coursera",
+  "timestamp": "2026-03-12T21:38:44.352Z",
+  "title": "Explore new courses on Coursera | Coursera",
+  "template": "explore-page",
+  "blocks": [
+    "hero-discovery",
+    "cards-course",
+    "hero-promo",
+    "tabs-industry",
+    "cards-explore",
+    "columns-features"
+  ]
+}

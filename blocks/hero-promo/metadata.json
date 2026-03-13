@@ -1,0 +1,38 @@
+{
+  "variantName": "hero-promo",
+  "baseBlock": "hero",
+  "version": "1.0.0",
+  "created": "2026-03-12T21:10:00.000Z",
+  "sourceContext": {
+    "originUrl": "https://www.coursera.org/explore/new-on-coursera",
+    "originPage": "Coursera explore/discovery page",
+    "blockPosition": "middle"
+  },
+  "visualCharacteristics": {
+    "colorScheme": "dark",
+    "density": "compact",
+    "purpose": "promo-banner",
+    "imagePattern": "large"
+  },
+  "contentPattern": {
+    "structure": "logo + heading + CTA + decorative-image",
+    "buttonCount": 1,
+    "imageCount": 2
+  },
+  "reuseGuidance": {
+    "suitableFor": [
+      "subscription CTA banners",
+      "promotional banners mid-page",
+      "upsell sections with dark gradient"
+    ],
+    "notSuitableFor": [
+      "page-top hero sections",
+      "text-only banners"
+    ]
+  },
+  "usage": {
+    "pagesUsing": ["/explore/new-on-coursera"],
+    "reuseCount": 1,
+    "lastUsed": "2026-03-12T21:10:00.000Z"
+  }
+}

@@ -1,0 +1,81 @@
+/* Hero Discovery - Coursera "New on Coursera" page hero */
+.hero-discovery-container .hero-discovery-wrapper {
+  max-width: unset;
+  padding: 0;
+  background-color: var(--link-color);
+}
+
+.hero-discovery {
+  position: relative;
+  padding: 48px 24px;
+  max-width: var(--content-max-width);
+  margin: 0 auto;
+  color: var(--background-color);
+  overflow: hidden;
+}
+
+.hero-discovery h1,
+.hero-discovery h2,
+.hero-discovery h3,
+.hero-discovery h4,
+.hero-discovery h5,
+.hero-discovery h6 {
+  color: var(--background-color);
+}
+
+.hero-discovery p {
+  color: var(--background-color);
+}
+
+.hero-discovery a:any-link {
+  color: var(--background-color);
+}
+
+.hero-discovery .button-container {
+  margin: 12px 0;
+}
+
+.hero-discovery a.button:any-link {
+  background-color: var(--background-color);
+  color: var(--link-color);
+  border-radius: var(--button-border-radius);
+  padding: var(--button-padding-large);
+  font-weight: var(--button-font-weight);
+}
+
+.hero-discovery a.button:hover {
+  background-color: var(--light-color);
+  color: var(--link-hover-color);
+}
+
+.hero-discovery > div:first-child {
+  display: flex;
+  justify-content: center;
+}
+
+.hero-discovery img {
+  max-width: 280px;
+  height: auto;
+}
+
+@media (width >= 900px) {
+  .hero-discovery {
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    gap: 48px;
+    padding: 64px 32px;
+  }
+
+  .hero-discovery > div:first-child {
+    flex: 0 0 auto;
+  }
+
+  .hero-discovery > div:last-child {
+    flex: 1;
+  }
+
+  .hero-discovery img {
+    max-width: 360px;
+  }
+}

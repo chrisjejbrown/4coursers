@@ -1,0 +1,38 @@
+{
+  "variantName": "cards-explore",
+  "baseBlock": "cards",
+  "version": "1.0.0",
+  "created": "2026-03-12T21:10:00.000Z",
+  "sourceContext": {
+    "originUrl": "https://www.coursera.org/explore/new-on-coursera",
+    "originPage": "Coursera explore/discovery page",
+    "blockPosition": "bottom"
+  },
+  "visualCharacteristics": {
+    "colorScheme": "light",
+    "density": "spacious",
+    "purpose": "explore-links",
+    "imagePattern": "noimg"
+  },
+  "contentPattern": {
+    "structure": "heading + description + CTA-button",
+    "buttonCount": 1,
+    "imageCount": 0
+  },
+  "reuseGuidance": {
+    "suitableFor": [
+      "explore/browse link cards",
+      "text-only cards with CTA",
+      "3-column navigation cards"
+    ],
+    "notSuitableFor": [
+      "cards with images",
+      "product cards with metadata"
+    ]
+  },
+  "usage": {
+    "pagesUsing": ["/explore/new-on-coursera"],
+    "reuseCount": 1,
+    "lastUsed": "2026-03-12T21:10:00.000Z"
+  }
+}
