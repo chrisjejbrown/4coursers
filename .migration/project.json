@@ -1,5 +1,9 @@
 {
   "type": "xwalk",
-  "contentHostUrl": "author-p130360-e1272151.adobeaemcloud.com",
-  "libraryUrl": "https://main--sta-xwalk-boilerplate--aemysites.aem.page/tools/sidekick/library.json"
+  "contentHostUrl": "author-p107109-e1000961.adobeaemcloud.com",
+  "libraryUrl": "https://main--sta-xwalk-boilerplate--aemysites.aem.page/tools/sidekick/library.json",
+  "aemSitePath": "/content/coursera",
+  "aemAssetsFolderPath": "/content/dam/coursera",
+  "aemSiteName": "coursera",
+  "aemSiteTitle": "Coursera"
 }
